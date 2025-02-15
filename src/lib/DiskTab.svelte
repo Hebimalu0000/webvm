@@ -51,12 +51,12 @@
 <PanelButton buttonIcon="fa-solid fa-trash-can" clickHandler={handleReset} buttonText={getButtonText(state)} bgColor={getBgColor(state)} hoverColor={getHoverColor(state)}>
 </PanelButton>
 {#if state == "CONFIRM"}
-	<p><span class="font-bold">Warning: </span>WebVM will reload</p>
+	<p><span class="font-bold">バックエンドから警告: </span>WebVM が再起動されます</p>
 {:else if state == "RESETTING"}
-	<p><span class="font-bold">Reset in progress: </span>Please wait...</p>
+	<p><span class="font-bold">バックエンドの初期化: </span>実行中です...</p>
 {:else}
-	<p><span class="font-bold">Backend latency: </span>{$diskLatency}ms</p>
+	<p><span class="font-bold">バックエンドの遅延率: </span>{$diskLatency}ms</p>
 {/if}
-<p>WebVM runs on top of a complete Linux distribution</p>
-<p>Filesystems up to 2GB are supported and data is downloaded completely on-demand</p>
-<p>The WebVM cloud backend uses WebSockets and a it's distributed via a global CDN to minimize download latency</p>
+<p>WebVM は完全な Linux ディストリビューション上で実行されます</p>
+<p>最大 2GB のファイルシステムがサポートされ、データは完全にオンデマンドでダウンロードされます</p>
+<p>WebVM クラウド バックエンドは WebSocket を使用し、ダウンロードの遅延を最小限に抑えるためにグローバル CDN 経由で配布されます</p>
