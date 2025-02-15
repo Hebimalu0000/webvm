@@ -4,8 +4,7 @@
 	import NetworkingTab from './NetworkingTab.svelte';
 	import CpuTab from './CpuTab.svelte';
 	import DiskTab from './DiskTab.svelte';
-	import AnthropicTab from './AnthropicTab.svelte';
-	import { cpuActivity, diskActivity, aiActivity } from './activities.js';
+	import { cpuActivity, diskActivity } from './activities.js';
 	const icons = [
 		{ icon: 'fas fa-info-circle', info: 'Information', activity: null },
 		{ icon: 'fas fa-wifi', info: 'Networking', activity: null },
