@@ -16,11 +16,11 @@
 	function getButtonText(state)
 	{
 		if(state == "START")
-			return "Reset disk";
+			return "ディスクをリセット";
 		else if (state == "RESETTING")
-			return "Resetting...";
+			return "リセット中";
 		else
-			return "Reset disk. Confirm?";
+			return "ディスクをリセットしますか?";
 	}
 	function getBgColor(state)
 	{
