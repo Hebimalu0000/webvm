@@ -32,17 +32,17 @@
 		switch(state)
 		{
 			case "DISCONNECTED":
-				return "Connect to Tailscale";
+				return "Tailscale に接続する";
 			case "DOWNLOADING":
-				return "Loading IP stack...";
+				return "IP スタックをロードしています...";
 			case "LOGINSTARTING":
-				return "Starting Login...";
+				return "ログインしています...";
 			case "LOGINREADY":
-				return "Login to Tailscale";
+				return "Tailscale にログイン";
 			case "CONNECTED":
 				return `IP: ${networkData.currentIp}`;
 			case "IPCOPIED":
-				return "Copied!";
+				return "コピーしました!";
 			default:
 				break;
 		}
@@ -84,7 +84,7 @@
 		switch(state)
 		{
 			case "CONNECTED":
-				return "Right-click to copy";
+				return "右クリックでコピー";
 		}
 		return null;
 	}
