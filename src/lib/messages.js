@@ -3,40 +3,34 @@ const underline= "\x1b[94;4m";
 const normal= "\x1b[0m";
 export const introMessage = [
 	"+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~+",
+	"|                   ___      ___   _  __   ____  __                    |",
+	"|                   \  \    /  /__| |_\ \ / /  \/  |                   |",
+	"|                    \  \/\/  / -_) '_ \ V /| |\/| |                   |",
+	"|                     \__/\__/\___|_'__/\_/ |_|  |_|                   |",
 	"|                                                                      |",
+	"|                   ================================                   |",
+	"|                          Powered by CheerpX                          |",
 	"|                                                                      |",
-	"|                                                                      |",
-	"|                                                                      |",
-	"|                                                                      |",
-	"|                                                                      |",
-	"|                                                                      |",
-	"|                                                                      |",
-	"|                                                                      |",
-	"+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~+",
-	"+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~+",
-	"+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~+",
-	"+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~+",
-	"+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~+",
 	"+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~+",
 	""
 ];
 export const errorMessage = [
-	color + "CheerpX could not start" + normal,
+	color + "CheerpX が起動できませんでした" + normal,
 	"",
-	"CheerpX is expected to work with recent desktop versions of Chrome, Edge, Firefox and Safari",
+	"CheerpX はデスクトップ版の Chrome, Edge, Firefox, Safari で起動します",
 	"",
-	"Give it a try from a desktop version / another browser!",
+	"デスクトップ版 または 他のブラウザ で開いてください !",
 	"",
-	"CheerpX internal error message is:",
+	"CheerpX 内部で発生したエラーのメッセージ:",
 	""
 ];
 export const unexpectedErrorMessage = [
-	color + "WebVM encountered an unexpected error" + normal,
+	color + "WebVM で予期しないエラーが発生しました" + normal,
 	"",
-	"Check the DevTools console for further information",
+	"詳細については、DevTools コンソールを確認してください",
 	"",
-	"Please consider reporting a bug!",
+	"バグの報告 を検討してください !",
 	"",
-	"CheerpX internal error message is:",
+	"CheerpX 内部で発生したエラーのメッセージ:",
 	""
 ];
