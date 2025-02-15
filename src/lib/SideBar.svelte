@@ -5,20 +5,12 @@
 	import CpuTab from './CpuTab.svelte';
 	import DiskTab from './DiskTab.svelte';
 	import AnthropicTab from './AnthropicTab.svelte';
-	import PostsTab from './PostsTab.svelte';
-	import DiscordTab from './DiscordTab.svelte';
-	import GitHubTab from './GitHubTab.svelte';
 	import { cpuActivity, diskActivity, aiActivity } from './activities.js';
 	const icons = [
 		{ icon: 'fas fa-info-circle', info: 'Information', activity: null },
 		{ icon: 'fas fa-wifi', info: 'Networking', activity: null },
 		{ icon: 'fas fa-microchip', info: 'CPU', activity: cpuActivity },
 		{ icon: 'fas fa-compact-disc', info: 'Disk', activity: diskActivity },
-		{ icon: 'fas fa-robot', info: 'ClaudeAI', activity: aiActivity },
-		null,
-		{ icon: 'fas fa-book-open', info: 'Posts', activity: null },
-		{ icon: 'fab fa-discord', info: 'Discord', activity: null },
-		{ icon: 'fab fa-github', info: 'GitHub', activity: null },
 	];
 	let activeInfo = null; // Tracks currently visible info.
 	let hideTimeout = 0; // Timeout for hiding info panel.
@@ -85,14 +77,6 @@
 			<CpuTab/>
 		{:else if activeInfo === 'Disk'}
 			<DiskTab on:reset/>
-		{:else if activeInfo === 'ClaudeAI'}
-			<AnthropicTab handleTool={handleTool} />
-		{:else if activeInfo === 'Posts'}
-			<PostsTab/>
-		{:else if activeInfo === 'Discord'}
-			<DiscordTab/>
-		{:else if activeInfo === 'GitHub'}
-			<GitHubTab/>
 		{:else}
 			<p>TODO: {activeInfo}</p>
 		{/if}
